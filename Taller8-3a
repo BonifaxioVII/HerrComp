@@ -1,1 +1,10 @@
+import numpy as np
+import matplotlib.pyplot as plt
 
+def f(x,a1,a2,a3,a4,a5,a6):
+  return a1*x**5  + a2*x**4 +  a3*x**3 +  a4*x**2 +  a5*x  +  a6
+
+x = np.linspace(-10,10,100)
+a1, a2, a3, a4, a5, a6 = 0, 1, 4, 1, 6, 4
+
+y = f(x, a1, a2, a3, a4, a5, a6) + 10*np.random.randn(100)
